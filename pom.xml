@@ -271,7 +271,7 @@
                     <releaseProfiles>package,release</releaseProfiles>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
-            </plugin>
+            </plugin>            
         </plugins>
     </build>
 

@@ -96,6 +96,8 @@ public class OkHttpClient implements HttpClient {
 
         resolveSslSocketFactory(builder, config.getKeyStore(), config.getKeyStorePassword().value());
 
+        builder.hostnameVerifier((hostname, session) -> true);
+
         client = builder.build();
     }
 
